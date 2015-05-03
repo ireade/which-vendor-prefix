@@ -1,0 +1,166 @@
+/* Eric Meyer's Reset CSS v2.0 
+   http://meyerweb.com/eric/tools/css/reset
+ * http://cssreset.com
+ */
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Box sizing reset 
+   Thanks to Paul Irish
+   http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* */
+
+
+html {
+	font-size: 62.5%;
+	background-color: rgb(250, 250, 250);
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: 'Raleway';
+	line-height: 1.4;
+	color: rgb(50, 50, 50);
+	text-align: center;
+
+}
+
+
+h1 {
+	font-size: 3rem;
+	margin: 20px auto;
+}
+
+p {
+	width: 90%;
+	max-width: 780px;
+	margin: 0 auto 15px;
+}
+
+
+li.property {
+	list-style-type: none;
+	margin: 40px auto;
+
+	width: 90%;
+	max-width: 780px;
+
+	border: 2px solid rgb(200, 200, 200);
+	border-bottom: 0;
+
+	
+}
+
+.property-name {
+	display: block;
+	background-color: rgb(220, 220, 220);
+	min-height: 50px;
+	padding: 10px;
+}
+
+.heading {
+	font-weight: 700;
+}
+
+.browser {
+	border-bottom: 2px solid rgb(200, 200, 200);
+}
+
+.browser-name {
+	display: inline-block;
+	width: 25%;
+	height: 100%;
+	padding: 5px;
+	border-right: 2px solid rgb(200, 200, 200);
+}
+
+.browser-prefix {
+	display: inline-block;
+	width: 15%;
+	height: 100%;
+	padding: 5px;
+	border-right: 2px solid rgb(200, 200, 200);
+}
+
+.browser-versions {
+	display: inline-block;
+	width: 40%;
+	padding: 5px;
+
+}
+
+.browser-current {
+	display: inline-block;
+	width: 15%;
+	height: 100%;
+	border-left: 2px solid rgb(200, 200, 200);
+}
+
+
+.n {
+	color: red;
+}
+
+.y-x {
+	color: blue;
+}
+
+.a {
+	color: yellow;
+}
+
+.y {
+	color: green;
+}
