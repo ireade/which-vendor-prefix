@@ -1,3 +1,5 @@
+// Custom Handlebars Helpers
+
 Handlebars.registerHelper('ifCond', function(v1, v2, options) {
   if(v1 === v2) {
     return options.fn(this);
@@ -115,43 +117,43 @@ Handlebars.registerHelper('browserCurrent', function(browser_id) {
 			return "11"
 			break
 		case 'firefox':
-			return "-moz-"
+			return "37"
 			break
 		case 'chrome':
-			return "-webkit-"
+			return "42"
 			break
 		case 'safari':
-			return "-webkit-"
+			return "8"
 			break
 		case 'opera':
-			return "-o-"
+			return "27"
 			break
 		case 'ios_saf':
-			return "-webkit-"
+			return "8.1-8.3"
 			break
 		case 'op_mini':
-			return "-o-"
+			return "5.0-8.0"
 			break
 		case 'android':
-			return "-webkit-"
+			return "40"
 			break
 		case 'op_mob':
-			return "-o-"
+			return "24"
 			break
 		case 'and_chr':
-			return "-webkit-"
+			return "42"
 			break
 		case 'and_ff':
-			return "-mox-"
+			return "37"
 			break
 		case 'ie_mob':
-			return "-ms-"
+			return "11"
 			break
 		case 'and_uc':
-			return "-webkit-"
+			return "9.9"
 			break
 		case 'bb':
-			return "-webkit-"
+			return "10"
 			break
 		default:
 			return "-"

@@ -16,7 +16,7 @@
 	
 	<h1>Which Vendor Prefix?</h1>
 
-	<p>A list of css properties that require a vendor prefix.</p>
+	<p>A list of css properties and the versions of browsers that require a vendor prefix.</p>
 
 	<p>Based on <a href="https://github.com/Fyrd/caniuse">caniuse</a> data.</p>
 
@@ -37,8 +37,8 @@
 			<div class="browser">
 			<div class="browser-name heading">Browser</div>
 			<div class="browser-prefix heading">Prefix</div>
-			<div class="browser-versions heading">Versions that Require a Prefix</div>
-			<div class="browser-current heading">Current</div>
+			<div class="browser-versions heading">Versions that <span class="n">Do Not Support</span> or <span class="y-x">Require a Prefix</span></div>
+			<div class="browser-current heading">Current Version</div>
 			</div>
 
 			{{#each stats}}
@@ -49,6 +49,9 @@
 			{{#each this}}
 				{{#ifCond this 'y x'}}
 				    <span class="y-x">{{@key}},</span> &nbsp;
+				{{/ifCond}}
+				{{#ifCond this 'n'}}
+				    <span class="n">{{@key}},</span> &nbsp;
 				{{/ifCond}}
 			{{/each}}
 			</div>
