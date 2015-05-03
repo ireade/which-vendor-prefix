@@ -5,22 +5,25 @@
 	<title>Which Vendor Prefix?</title>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
+	<meta name="description" content="A list of css properties and the versions of browsers that require a vendor prefix">
 	
+	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 
-	
+	<div class="container">
+		
 	<h1>Which Vendor Prefix?</h1>
 
-	<p>A list of css properties and the versions of browsers that require a vendor prefix.</p>
+	<p>A list of css properties and the versions of browsers that require a vendor prefix. If a version number is not listed, it is because it is partially or fully supported, without the need for prefix.</p>
 
 	<p>Based on <a href="https://github.com/Fyrd/caniuse">caniuse</a> data.</p>
 
 	<ul id="whichvendorprefix"></ul>
+
+	</div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -32,20 +35,24 @@
     <script id="properties-template" type="text/x-handlebars-template">
 	 {{#each Property}}
   		<li class="property">
-			<div class="property-name">{{title}}</div>
+		<div class="property-name">
+			<h2>{{title}}</h2>
+			<p>{{description}}</p>
+		</div>
 
-			<div class="browser">
-			<div class="browser-name heading">Browser</div>
-			<div class="browser-prefix heading">Prefix</div>
-			<div class="browser-versions heading">Versions that <span class="n">Do Not Support</span> or <span class="y-x">Require a Prefix</span></div>
-			<div class="browser-current heading">Current Version</div>
-			</div>
+		<table>
+			<tr>
+			<th class="browser-name heading">Browser</th>
+			<th class="browser-prefix heading">Prefix</th>
+			<th class="browser-versions heading">Versions that <span class="n">Do Not Support</span> or <span class="y-x">Require a Prefix</span></th>
+			<th class="browser-current heading">Current Version</th>
+
 
 			{{#each stats}}
-			<div class="browser">
-			<div class="browser-name">{{#browserName @key}}{{/browserName}}</div>
-			<div class="browser-prefix">{{#browserPrefix @key}}{{/browserPrefix}}</div>
-			<div class="browser-versions">
+			<tr>
+			<td class="browser-name">{{#browserName @key}}{{/browserName}}</td>
+			<td class="browser-prefix">{{#browserPrefix @key}}{{/browserPrefix}}</td>
+			<td class="browser-versions">
 			{{#each this}}
 				{{#ifCond this 'y x'}}
 				    <span class="y-x">{{@key}},</span> &nbsp;
@@ -54,11 +61,12 @@
 				    <span class="n">{{@key}},</span> &nbsp;
 				{{/ifCond}}
 			{{/each}}
-			</div>
-			<div class="browser-current">{{#browserCurrent @key}}{{/browserCurrent}}</div>
-			</div>
+			</td>
+			<td class="browser-current">{{#browserCurrent @key}}{{/browserCurrent}}</td>
+			<tr>
 			{{/each}}
-			
+		
+		</table>
   		</li>
 	  {{/each}}
 	 </script>

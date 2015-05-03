@@ -45,7 +45,7 @@ Handlebars.registerHelper('browserName', function(browser_id) {
 			return "Firefox for Android"
 			break
 		case 'ie_mob':
-			return "Internet Explorer Mobile"
+			return "IE Mobile"
 			break
 		case 'and_uc':
 			return "UC for Android"
@@ -54,7 +54,7 @@ Handlebars.registerHelper('browserName', function(browser_id) {
 			return "Blackberry"
 			break
 		default:
-			return "Browser"
+			return "nil"
 	}
 })
 
@@ -105,7 +105,7 @@ Handlebars.registerHelper('browserPrefix', function(browser_id) {
 			return "-webkit-"
 			break
 		default:
-			return "-"
+			return "nil"
 	}
 })
 
@@ -156,6 +156,6 @@ Handlebars.registerHelper('browserCurrent', function(browser_id) {
 			return "10"
 			break
 		default:
-			return "-"
+			return "nil"
 	}
 })
