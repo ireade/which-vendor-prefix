@@ -2,7 +2,7 @@
 
 Displays all the css properties that need a vendor prefix. Based on [caniuse](https://github.com/Fyrd/caniuse) data.
 
-Still a working progress.
+Still a work in progress.
 
 I created this by looking through the caniuse data for anything that shows to require a vendor prefix. For some reason, things other than css properties show up on the list as well.
 
