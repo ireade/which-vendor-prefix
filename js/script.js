@@ -6,9 +6,6 @@ $(document).ready(function() {
 	var localRequestUrl = 'data.json';
 
 
-	
-
-
 	$.getJSON(localRequestUrl, function(response) {
 
 		var cssProperties = [];
@@ -51,7 +48,7 @@ $(document).ready(function() {
 
 		$("#whichvendorprefix").html(output)
 
-		console.log(cssProperties);
+		//console.log(cssProperties);
 
 	});
 
