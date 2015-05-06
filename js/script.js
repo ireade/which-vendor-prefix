@@ -6,7 +6,7 @@ $(document).ready(function() {
 	var localRequestUrl = 'data.json';
 
 
-	$.getJSON(localRequestUrl, function(response) {
+	$.getJSON(requestUrl, function(response) {
 
 		var cssProperties = [];
 

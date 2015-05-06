@@ -93,7 +93,7 @@ Handlebars.registerHelper('browserPrefix', function(browser_id) {
 			return "-webkit-"
 			break
 		case 'and_ff':
-			return "-mox-"
+			return "-moz-"
 			break
 		case 'ie_mob':
 			return "-ms-"
