@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 
-	//var requestUrl = 'http://raw.githubusercontent.com/Fyrd/caniuse/master/data.json';
+	var requestUrl = 'http://raw.githubusercontent.com/Fyrd/caniuse/master/data.json';
 
 	var localRequestUrl = 'data.json';
 
