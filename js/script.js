@@ -2,11 +2,10 @@ $(document).ready(function() {
 
 
 	var requestUrl = 'http://raw.githubusercontent.com/Fyrd/caniuse/master/data.json';
-
 	var localRequestUrl = 'data.json';
 
 
-	$.getJSON(requestUrl, function(response) {
+	$.getJSON(localRequestUrl, function(response) {
 
 		var cssProperties = [];
 
