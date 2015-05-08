@@ -33,7 +33,7 @@ Handlebars.registerHelper('browserName', function(browser_id) {
 			return "Opera Mini"
 			break
 		case 'android':
-			return "Andoird Browser"
+			return "Android Browser"
 			break
 		case 'op_mob':
 			return "Opera Mobile"
